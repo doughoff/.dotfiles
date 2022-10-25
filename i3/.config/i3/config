@@ -1,7 +1,7 @@
 exec_always  xrandr --output eDP-1 --mode 1920x1080 --pos 2560x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off --output DP-3 --off --output HDMI-3 --off --output HDMI-1-0 --primary --mode 2560x1080 --pos 0x0 --rotate normal
 
 # Monitors variables
-set $first_monitor HDMI-1-4
+set $first_monitor HDMI-1-0
 set $second_monitor eDP-1
 
 set $mod Mod4
@@ -128,9 +128,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bar {
-   status_command i3status -c ~/.config/i3status/config
-}
+# bar {
+#    status_command i3status -c ~/.config/i3status/config
+# }
 
 # remove all borders
 for_window [class="^.*"] border none
@@ -143,3 +143,4 @@ gaps outer 8
 exec_always sxhkd -c ~/.config/sxhkd/sxhkdrc
 exec_always nitrogen --restore
 exec --no-startup-id picom -b
+exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
