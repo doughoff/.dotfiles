@@ -9,3 +9,6 @@ hyper + {1-4,0}
 
 hyper + shift + {1-4}
 	i3-msg move container to workspace {6-9,0}
+
+super + m
+	~/.config/rofi/rofi-beats.sh &
