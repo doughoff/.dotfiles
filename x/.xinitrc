@@ -34,9 +34,6 @@ fi
 
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
-set WINIT_X11_SCALE_FACTOR=1.5 alacritty
-
-
 ## vscode auth stuff
 # see https://unix.stackexchange.com/a/295652/332452
 source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
