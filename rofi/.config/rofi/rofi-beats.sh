@@ -1,19 +1,20 @@
 #!/bin/sh
 
 # add more args here according to preference
-ARGS="--volume=60"
+ARGS="--volume=88"
 
 notification(){
 	notify-send "Playing now: " "$@" --icon=media-tape
 }
 
 menu(){
-	printf "1. Lofi Girl\n"
+	printf "1. Lofi Radio\n"
 	printf "2. Chillhop\n"
 	printf "3. Box Lofi\n"
 	printf "4. The Bootleg Boy\n"
 	printf "5. Radio Spinner\n"
-	printf "6. SmoothChill"
+	printf "6. SmoothChill\n"
+	printf "7. Lofi Girl\n"
 }
 
 main() {
@@ -21,7 +22,7 @@ main() {
 
 	case $choice in
 		1)
-			notification "Lofi Girl ☕️🎶";
+			notification "Lofi Radio ☕️🎶";
             URL="https://play.streamafrica.net/lofiradio"
 			break
 			;;
@@ -50,10 +51,15 @@ main() {
             URL="https://media-ssl.musicradio.com/SmoothChill"
 			break
 			;;
+		7)
+			notification "LofiGirl ☕️🎶";
+						URL="https://youtu.be/jfKfPfyJRdk --no-video"
+			break
+			;;
 	esac
     # run mpv with args and selected url
     # added title arg to make sure the pkill command kills only this instance of mpv
-    mpv $ARGS --title="radio-mpv" $URL
+    mpv $ARGS --title="radio-mpv" $URL 
 }
 
 pkill -f radio-mpv || main
