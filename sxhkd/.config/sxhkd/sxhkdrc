@@ -12,3 +12,9 @@ hyper + shift + {1-4}
 
 super + m
 	~/.config/rofi/rofi-beats.sh &
+
+super + p
+	~/.config/rofi/rofi-screenshot.sh &
+
+print
+	~/.config/rofi/rofi-screenshot.sh &
