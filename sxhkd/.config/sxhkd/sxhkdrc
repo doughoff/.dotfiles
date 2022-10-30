@@ -18,3 +18,6 @@ super + p
 
 print
 	~/.config/rofi/rofi-screenshot.sh &
+
+super + w
+	~/.config/rofi/rofi-browser.sh &
