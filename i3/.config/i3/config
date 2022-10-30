@@ -1,8 +1,12 @@
 exec_always  xrandr --output eDP-1 --mode 1920x1080 --pos 2560x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off --output DP-3 --off --output HDMI-3 --off --output HDMI-1-0 --primary --mode 2560x1080 --pos 0x0 --rotate normal
 
 # Monitors variables
+# set $first_monitor HDMI-1-0
+# set $second_monitor eDP-1
+
 set $first_monitor HDMI-1-0
 set $second_monitor eDP-1
+
 
 set $mod Mod4
 
@@ -144,5 +148,5 @@ default_floating_border pixel 0
 
 exec_always sxhkd -c ~/.config/sxhkd/sxhkdrc
 exec_always nitrogen --restore
-exec --no-startup-id picom -bpicom.conf
+exec_always --no-startup-id pico --config ~/.config/picom/picom.conf
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
