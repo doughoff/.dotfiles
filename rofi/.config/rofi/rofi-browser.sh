@@ -10,6 +10,9 @@ case "${sel%.*}" in
 		# select region to capture
 		$BROWSER -P Quality
 		;;
+	3)
+		$BROWSER -P 
+		;;
 
 	*)
 		return
@@ -19,4 +22,5 @@ case "${sel%.*}" in
 )) <<end
 1. Default-release
 2. Quality
+3. Change Default
 end
