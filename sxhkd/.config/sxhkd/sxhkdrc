@@ -22,6 +22,9 @@ print
 super + w
 	~/.config/rofi/rofi-browser.sh &
 
+hyper + l
+	~/.config/rofi/rofi-powermenu.sh &
+
 
 XF86AudioPlay
 	playerctl play-pause

@@ -19,7 +19,6 @@ case "${sel%.*}" in
 		return
 		;;
 	esac
-	echo $SCREENSHOT
 )) <<end
 1. Whole screen
 2. Select region

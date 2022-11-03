@@ -18,7 +18,6 @@ case "${sel%.*}" in
 		return
 		;;
 	esac
-	echo $SCREENSHOT
 )) <<end
 1. Default-release
 2. Quality
