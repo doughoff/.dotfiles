@@ -141,15 +141,25 @@ default_border pixel 1
 default_floating_border pixel 1
 for_window [class="^.*"] border pixel 1
 
+# class                 border  backgr. text    indicator child_border
+client.focused          #928374 #282828 #d65d0e #928374   #928374
+client.focused_inactive #333333 #3c3836 #d79921 #484e50   #5f676a
+client.unfocused        #333333 #504945 #888888 #292d2e   #222222
+client.urgent           #2f343a #cc241d #d79921 #cc241d   #cc241d
+client.placeholder      #000000 #928374 #d79921 #000000   #0c0c0c
+
+client.background       #ffffff
+
 
 # for_window [class="^.*"] border none
 
 # gaps
-# gaps inner 8
-# gaps outer 8
+gaps inner 8
+gaps outer 8
 
 
 exec_always sxhkd -c ~/.config/sxhkd/sxhkdrc
 exec_always --no-startup-id picom
-exec_always --no-startup-id nitrogen --restore
+exec_always --no-startup-id feh --no-fehbg --bg-max '/home/dg/Downloads/wallpaperflare.com_wallpaper.jpg'
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
+exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1 &

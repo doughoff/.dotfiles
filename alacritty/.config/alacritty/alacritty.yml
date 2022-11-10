@@ -22,3 +22,8 @@ font:
     style: Bold Italic
 
   size: 12
+
+
+import:
+  ## https://github.com/eendroroy/alacritty-theme
+  - ~/.alacritty-colorscheme/themes/gruvbox_dark.yaml
