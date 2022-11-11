@@ -4,6 +4,15 @@ window:
     x: 15
     y: 15
 
+scrolling:
+  # How many lines of scrollback to keep,
+  # '0' will disable scrolling.
+  history: 10000
+
+  # Number of lines the viewport will move for every line
+  # scrolled when scrollback is enabled (history > 0).
+  multiplier: 5
+
 font:
   normal:
     family: JetBrains Mono Nerd Font
@@ -22,7 +31,6 @@ font:
     style: Bold Italic
 
   size: 12
-
 
 import:
   ## https://github.com/eendroroy/alacritty-theme
