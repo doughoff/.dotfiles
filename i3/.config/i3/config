@@ -159,7 +159,7 @@ gaps outer 8
 
 
 exec_always sxhkd -c ~/.config/sxhkd/sxhkdrc
-exec_always --no-startup-id picom --config ~/.config/picom/picom.config
+exec_always --no-startup-id picom 
 exec_always --no-startup-id feh --no-fehbg --bg-max '/home/dg/Downloads/wallpaperflare.com_wallpaper.jpg'
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1 &
